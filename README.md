@@ -1,21 +1,18 @@
 🎯 Overview
+
+
 Production-ready MLOps batch job that processes Bitcoin OHLCV data to generate trading signals using rolling mean comparison. Built for MetaStackerBandit trading-signal pipelines.
 
 Key Features:
 
+
+```bash
 ✅ Reproducible: Deterministic via config seed (42)
-
-
 ✅ Observable: Structured logs + JSON metrics
-
-
 ✅ Deployable: Dockerized, one-command execution
-
-
 ✅ Robust: Full input validation + error handling
-
-
 ✅ Exact CLI: python run.py --input data.csv --config config.yaml --output metrics.json --log-file run.log
+```
 
 📋 Quick Start
 
@@ -99,40 +96,27 @@ mlops-task/
 
 
 Processing Pipeline
-
+```bash
 1. Load config.yaml → Validate seed/window/version
-
-
 2. Load data.csv → Validate 'close' column + non-empty  
-
-
 3. Compute rolling_mean(close, window=5)
-
-
 4. Generate signal = 1 if close > rolling_mean else 0
-
-
 5. Calculate: rows_processed, signal_rate, latency_ms
-
-
 6. Output: metrics.json + structured logs
-
+```
 
 
 Error Handling
 
-
+```bash
 ❌ Missing data.csv → Error metrics JSON
-
 ❌ Invalid config → Error metrics JSON
-
 ❌ Missing close column → Error metrics JSON
-
 ✅ Always writes metrics.json + run.log
-
-
+```
 
 ⚙️ Configuration
+
 config.yaml:
 
 ```bash
@@ -204,3 +188,4 @@ python run.py --input data.csv --config config.yaml --output metrics.json --log-
 | Dockerization (25%) | ✅ PASS | docker run --rm mlops-task works  |
 | Code Quality (20%)  | ✅ PASS | Validation, error handling, clean |
 | Observability (15%) | ✅ PASS | Logs + metrics JSON               |
+
