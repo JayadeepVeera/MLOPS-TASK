@@ -1,0 +1,64 @@
+2026-02-26 11:03:02,161 - INFO - Job started
+2026-02-26 11:03:02,188 - INFO - Config: seed=42, window=5
+2026-02-26 11:03:02,282 - ERROR - [Errno 2] No such file or directory: 'data.csv'
+2026-02-26 11:15:16,974 - INFO - Job started
+2026-02-26 11:15:16,976 - INFO - Config: seed=42, window=5
+2026-02-26 11:15:16,995 - ERROR - Invalid/empty data or missing 'close'
+2026-02-26 11:15:46,819 - INFO - Job started
+2026-02-26 11:15:46,824 - INFO - Config: seed=42, window=5
+2026-02-26 11:15:46,858 - ERROR - Invalid/empty data or missing 'close'
+2026-02-26 11:16:02,930 - INFO - Job started
+2026-02-26 11:16:02,930 - INFO - Config: seed=42, window=5
+2026-02-26 11:16:02,962 - ERROR - Invalid/empty data or missing 'close'
+2026-02-26 11:32:41,338 - INFO - Job started
+2026-02-26 11:32:41,385 - INFO - Config: seed=42, window=5
+2026-02-26 11:32:41,495 - INFO - Loaded 10001 rows
+2026-02-26 11:32:41,515 - INFO - Rolling mean & signals computed
+2026-02-26 11:32:41,515 - INFO - Metrics: rows=10001, rate=0.0000
+2026-02-26 11:32:41,519 - INFO - Job complete
+2026-02-26 11:43:15,643 - INFO - Job started
+2026-02-26 11:43:15,643 - INFO - Config: seed=42, window=5
+2026-02-26 11:43:15,696 - INFO - Loaded 10001 rows
+2026-02-26 11:43:15,700 - INFO - Rolling mean & signals computed
+2026-02-26 11:43:15,703 - INFO - Metrics: rows=10001, rate=0.0000
+2026-02-26 11:43:15,704 - INFO - Job complete
+2026-02-26 11:45:06,025 - INFO - Job started
+2026-02-26 11:45:06,025 - INFO - Config: seed=42, window=5
+2026-02-26 11:45:06,059 - INFO - Loaded 10001 rows
+2026-02-26 11:45:06,059 - INFO - Rolling mean & signals computed
+2026-02-26 11:45:06,059 - INFO - Metrics: rows=10001, rate=0.0000
+2026-02-26 11:45:06,063 - INFO - Job complete
+2026-02-26 11:49:30,539 [INFO] Loading config: config.yaml
+2026-02-26 11:49:30,552 [INFO] Config loaded: seed=42, window=60, version=v1
+2026-02-26 11:49:30,553 [INFO] Loading data: data.csv
+2026-02-26 11:49:30,579 [INFO] Data loaded: 10001 rows, columns: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-02-26 11:49:30,579 [INFO] Computing rolling mean and signals...
+2026-02-26 11:49:30,584 [INFO] Processing complete: 0 rows, signal_rate=nan
+2026-02-26 11:49:30,584 [INFO] Job completed: status=success, latency=45ms
+2026-02-26 11:50:30,439 [INFO] Config: seed=42, window=60
+2026-02-26 11:50:30,464 [INFO] Loaded 10001 rows
+2026-02-26 11:50:30,465 [ERROR] Job failed: Not enough data for window 60: 0 rows
+2026-02-26 11:50:30,468 [INFO] Job complete
+2026-02-26 11:51:31,977 [INFO] Job started
+2026-02-26 11:51:31,998 [INFO] Config: seed=42, window=5
+2026-02-26 11:51:32,070 [ERROR] Job failed: Input CSV is empty
+2026-02-26 11:51:32,070 [INFO] Job complete
+2026-02-26 11:53:44,745 [INFO] Job started
+2026-02-26 11:53:44,745 [INFO] Config: seed=42, window=5
+2026-02-26 11:53:44,772 [ERROR] Job failed: No valid close prices found
+2026-02-26 11:53:44,774 [INFO] Job complete
+2026-02-26 12:09:47,701 - __main__ - INFO - Job started
+2026-02-26 12:09:47,752 - __main__ - INFO - Config loaded: seed=42, window=5, version=v1
+2026-02-26 12:09:47,752 - __main__ - ERROR - Job failed: Input file not found: data.csv
+2026-02-26 12:09:47,758 - __main__ - INFO - Metrics saved to metrics.json
+2026-02-26 12:10:05,310 - __main__ - INFO - Job started
+2026-02-26 12:10:05,315 - __main__ - INFO - Config loaded: seed=42, window=5, version=v1
+2026-02-26 12:10:05,413 - __main__ - INFO - Loaded 10000 rows from data.csv
+2026-02-26 12:10:05,436 - __main__ - INFO - Validated data: 10000 rows with valid 'close' values
+2026-02-26 12:10:05,437 - __main__ - INFO - Computing rolling mean (window=5)
+2026-02-26 12:10:05,444 - __main__ - INFO - Generating signals
+2026-02-26 12:10:05,450 - __main__ - INFO - Generated 9996 signals, signal_rate=0.4991
+2026-02-26 12:10:05,450 - __main__ - INFO - Processing completed successfully
+2026-02-26 12:10:05,453 - __main__ - INFO - Final metrics: rows=9996, signal_rate=0.4991, latency=139ms
+2026-02-26 12:10:05,454 - __main__ - INFO - Metrics saved to metrics.json
+2026-02-26 12:10:05,454 - __main__ - INFO - Job completed successfully
